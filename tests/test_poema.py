@@ -12,7 +12,11 @@ def test_separar_palavras():
     print(test_)
 
 
-test_separar_palavras()
+def test_primeira():
+    nome = "vanessa"
+    resultado = list(nome)[0]
+    assert resultado == "v"
+
 
 test_poem_lista = ['De', 'tudo,', 'ao', 'meu', 'amor', 'serei', 'atento,',
                    'Antes,', 'e', 'com', 'tal', 'zelo,', 'e', 'sempre,',
