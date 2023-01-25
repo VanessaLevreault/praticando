@@ -36,13 +36,13 @@ poem_lista = ['De', 'tudo,', 'ao', 'meu', 'amor', 'serei', 'atento,',
               'Eu', 'possa', 'me', 'dizer', 'do', 'amor', 'que',
               'tive:', ',', 'Que', 'nao', 'seja', 'imortal,', 'posto',
               'que', 'e', 'chama,', 'Mas', 'que', 'seja', 'infinito', 'enquanto', 'dure.']
-poema = poem_lista.sort()
 
+poem_lista.sort()
 
-for k in range(0, len(poem_list)):
-    if (poema[k] == poema[k+1]):
-
-        # numero_letras = poem_lista[1]
-        # assert numero_letras == 2
-
-        # print(len(test_poem_lista))
+rep = 0
+for k in range(0, len(poem_lista)-1):
+    if (poem_lista[k] == poem_lista[k+1]):
+        rep += 1
+    else:
+        print(poem_lista[k], ',', rep+1)
+        rep = 0
